@@ -13,6 +13,9 @@
 		867471452C14D524001889F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867471432C14D524001889F1 /* Main.storyboard */; };
 		867471472C14D526001889F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 867471462C14D526001889F1 /* Assets.xcassets */; };
 		8674714A2C14D526001889F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867471482C14D526001889F1 /* LaunchScreen.storyboard */; };
+		867471522C14D8E6001889F1 /* InternetMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867471512C14D8E6001889F1 /* InternetMonitor.swift */; };
+		867471552C14DA2C001889F1 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867471542C14DA2C001889F1 /* Network.framework */; };
+		867471572C1CFBC9001889F1 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867471562C1CFBC9001889F1 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		867471462C14D526001889F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		867471492C14D526001889F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8674714B2C14D526001889F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		867471512C14D8E6001889F1 /* InternetMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMonitor.swift; sourceTree = "<group>"; };
+		867471542C14DA2C001889F1 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		867471562C1CFBC9001889F1 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				867471552C14DA2C001889F1 /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,7 @@
 			children = (
 				8674713C2C14D524001889F1 /* Internet-UK */,
 				8674713B2C14D524001889F1 /* Products */,
+				867471532C14DA2B001889F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +67,22 @@
 				8674713D2C14D524001889F1 /* AppDelegate.swift */,
 				8674713F2C14D524001889F1 /* SceneDelegate.swift */,
 				867471412C14D524001889F1 /* ViewController.swift */,
+				867471512C14D8E6001889F1 /* InternetMonitor.swift */,
 				867471432C14D524001889F1 /* Main.storyboard */,
 				867471462C14D526001889F1 /* Assets.xcassets */,
 				867471482C14D526001889F1 /* LaunchScreen.storyboard */,
 				8674714B2C14D526001889F1 /* Info.plist */,
+				867471562C1CFBC9001889F1 /* WebViewController.swift */,
 			);
 			path = "Internet-UK";
+			sourceTree = "<group>";
+		};
+		867471532C14DA2B001889F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				867471542C14DA2C001889F1 /* Network.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +157,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				867471422C14D524001889F1 /* ViewController.swift in Sources */,
+				867471522C14D8E6001889F1 /* InternetMonitor.swift in Sources */,
 				8674713E2C14D524001889F1 /* AppDelegate.swift in Sources */,
+				867471572C1CFBC9001889F1 /* WebViewController.swift in Sources */,
 				867471402C14D524001889F1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
